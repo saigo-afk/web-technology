@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - TechGear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-shopping-bag"></i> TechGear
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleCart()">
+                            <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active">Wireless Earbuds Pro</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Product Image -->
+            <div class="col-lg-6 mb-4">
+                <div class="product-detail-image">
+                    <img src="https://via.placeholder.com/500x500?text=Wireless+Earbuds" alt="Wireless Earbuds Pro" class="img-fluid">
+                </div>
+                <div class="row mt-3 g-2">
+                    <div class="col-3"><img src="https://via.placeholder.com/100?text=View+1" alt="View 1" class="img-fluid border rounded cursor-pointer"></div>
+                    <div class="col-3"><img src="https://via.placeholder.com/100?text=View+2" alt="View 2" class="img-fluid border rounded cursor-pointer"></div>
+                    <div class="col-3"><img src="https://via.placeholder.com/100?text=View+3" alt="View 3" class="img-fluid border rounded cursor-pointer"></div>
+                    <div class="col-3"><img src="https://via.placeholder.com/100?text=View+4" alt="View 4" class="img-fluid border rounded cursor-pointer"></div>
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div class="col-lg-6">
+                <h1 class="mb-2">Wireless Earbuds Pro</h1>
+                
+                <!-- Rating -->
+                <div class="mb-3">
+                    <span class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span class="ms-2">(245 Customer Reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <div class="price-detail mb-3">
+                    <h2 class="price">$79.99</h2>
+                    <p class="original-price">Original Price: <s>$99.99</s></p>
+                    <span class="badge bg-danger">20% OFF</span>
+                </div>
+
+                <!-- Availability -->
+                <div class="mb-3">
+                    <p><strong>Availability:</strong> <span class="badge bg-success">In Stock</span></p>
+                    <p><strong>SKU:</strong> WEB-PRO-001</p>
+                </div>
+
+                <!-- Description -->
+                <div class="mb-4">
+                    <h5>Product Description</h5>
+                    <p>Experience premium audio quality with the Wireless Earbuds Pro. Featuring advanced noise cancellation technology, these earbuds deliver crystal-clear sound for both music and calls.</p>
+                    <ul>
+                        <li>Active Noise Cancellation (ANC)</li>
+                        <li>30-hour battery life (with charging case)</li>
+                        <li>IPX4 water resistance</li>
+                        <li>Touch controls</li>
+                        <li>Bluetooth 5.3 connectivity</li>
+                        <li>Premium sound quality</li>
+                    </ul>
+                </div>
+
+                <!-- Specifications -->
+                <div class="mb-4">
+                    <h5>Technical Specifications</h5>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td><strong>Driver Size:</strong></td>
+                                <td>12mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Frequency Response:</strong></td>
+                                <td>20Hz - 20kHz</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Impedance:</strong></td>
+                                <td>32 Ohms</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bluetooth Version:</strong></td>
+                                <td>5.3</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Battery Life:</strong></td>
+                                <td>6.5 hours (earbuds), 30 hours (with case)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weight:</strong></td>
+                                <td>6.2g per earbud</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Quantity and Add to Cart -->
+                <div class="mb-4">
+                    <div class="input-group" style="width: 200px;">
+                        <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()">-</button>
+                        <input type="number" id="quantity" class="form-control text-center" value="1" min="1" max="10">
+                        <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mb-4">
+                    <button class="btn btn-primary btn-lg w-100 mb-2" onclick="addProductToCart()">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                    <button class="btn btn-outline-secondary btn-lg w-100" onclick="addToWishlist()">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <h5>Payment Options</h5>
+                    <div class="d-flex gap-2">
+                        <img src="https://via.placeholder.com/50?text=Visa" alt="Visa" class="img-fluid" style="width: 50px;">
+                        <img src="https://via.placeholder.com/50?text=Mastercard" alt="Mastercard" class="img-fluid" style="width: 50px;">
+                        <img src="https://via.placeholder.com/50?text=PayPal" alt="PayPal" class="img-fluid" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Customer Reviews Section -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-4">Customer Reviews</h3>
+            </div>
+
+            <!-- Review Summary -->
+            <div class="col-lg-3 mb-4">
+                <div class="review-summary">
+                    <h4 class="mb-3">4.5 <i class="fas fa-star text-warning"></i></h4>
+                    <p class="text-muted">Based on 245 reviews</p>
+                    
+                    <div class="rating-bars mt-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span style="width: 40px;">5 <i class="fas fa-star text-warning"></i></span>
+                            <div class="progress flex-grow-1 ms-2" style="height: 8px;">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                            <span class="ms-2">60%</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span style="width: 40px;">4 <i class="fas fa-star text-warning"></i></span>
+                            <div class="progress flex-grow-1 ms-2" style="height: 8px;">
+                                <div class="progress-bar" style="width: 25%;"></div>
+                            </div>
+                            <span class="ms-2">25%</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span style="width: 40px;">3 <i class="fas fa-star text-warning"></i></span>
+                            <div class="progress flex-grow-1 ms-2" style="height: 8px;">
+                                <div class="progress-bar" style="width: 10%;"></div>
+                            </div>
+                            <span class="ms-2">10%</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span style="width: 40px;">2 <i class="fas fa-star text-warning"></i></span>
+                            <div class="progress flex-grow-1 ms-2" style="height: 8px;">
+                                <div class="progress-bar" style="width: 3%;"></div>
+                            </div>
+                            <span class="ms-2">3%</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span style="width: 40px;">1 <i class="fas fa-star text-warning"></i></span>
+                            <div class="progress flex-grow-1 ms-2" style="height: 8px;">
+                                <div class="progress-bar" style="width: 2%;"></div>
+                            </div>
+                            <span class="ms-2">2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual Reviews -->
+            <div class="col-lg-9">
+                <!-- Review 1 -->
+                <div class="review-item mb-4 pb-4 border-bottom">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div>
+                            <h6 class="mb-1">John Doe</h6>
+                            <span class="stars text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <h6>Excellent sound quality!</h6>
+                    <p>These earbuds are amazing! The noise cancellation works perfectly, and the battery life is exactly as advertised. Highly recommended!</p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-thumbs-up"></i> Helpful (23)</button>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-thumbs-down"></i> Not Helpful (2)</button>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-item mb-4 pb-4 border-bottom">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div>
+                            <h6 class="mb-1">Sarah Johnson</h6>
+                            <span class="stars text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                        <small class="text-muted">1 week ago</small>
+                    </div>
+                    <h6>Great product, minor issues</h6>
+                    <p>Really good earbuds overall. The only issue I had was the fit, but after trying different ear sizes, they work perfectly. Worth the investment!</p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-thumbs-up"></i> Helpful (15)</button>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-thumbs-down"></i> Not Helpful (1)</button>
+                    </div>
+                </div>
+
+                <!-- Review Form -->
+                <div class="review-form mt-4">
+                    <h5>Write a Review</h5>
+                    <form onsubmit="submitReview(event)">
+                        <div class="mb-3">
+                            <label for="reviewName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="reviewName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewRating" class="form-label">Rating</label>
+                            <select class="form-select" id="reviewRating" required>
+                                <option value="">Select Rating</option>
+                                <option value="5">5 Stars - Excellent</option>
+                                <option value="4">4 Stars - Good</option>
+                                <option value="3">3 Stars - Average</option>
+                                <option value="2">2 Stars - Poor</option>
+                                <option value="1">1 Star - Very Poor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewTitle" class="form-label">Review Title</label>
+                            <input type="text" class="form-control" id="reviewTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Your Review</label>
+                            <textarea class="form-control" id="reviewText" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Related Products -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-4">Related Products</h3>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Sports+Earbuds" alt="Sports Earbuds">
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Sports Wireless Earbuds</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span class="ms-2">(178)</span>
+                        </div>
+                        <p class="product-description">IPX7 waterproof, perfect for sports</p>
+                        <div class="price-section">
+                            <span class="price">$59.99</span>
+                            <span class="original-price">$79.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm w-100 mt-3" onclick="addToCart('Sports Wireless Earbuds', 59.99)">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Bluetooth+Speaker" alt="Bluetooth Speaker">
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Portable Bluetooth Speaker</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="ms-2">(312)</span>
+                        </div>
+                        <p class="product-description">Waterproof with 360-degree sound</p>
+                        <div class="price-section">
+                            <span class="price">$129.99</span>
+                            <span class="original-price">$179.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm w-100 mt-3" onclick="addToCart('Portable Bluetooth Speaker', 129.99)">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Phone+Case" alt="Phone Case">
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Premium Phone Case</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="ms-2">(389)</span>
+                        </div>
+                        <p class="product-description">Durable protection and stylish design</p>
+                        <div class="price-section">
+                            <span class="price">$24.99</span>
+                            <span class="original-price">$34.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm w-100 mt-3" onclick="addToCart('Premium Phone Case', 24.99)">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=USB+Cable" alt="USB Cable">
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Fast Charging USB Cable</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span class="ms-2">(128)</span>
+                        </div>
+                        <p class="product-description">Durable and reliable charging cable</p>
+                        <div class="price-section">
+                            <span class="price">$12.99</span>
+                            <span class="original-price">$19.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm w-100 mt-3" onclick="addToCart('Fast Charging USB Cable', 12.99)">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About TechGear</h5>
+                    <p>Your one-stop shop for premium tech products and accessories.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="products.html" class="text-white-50">Products</a></li>
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2026 TechGear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h4>Shopping Cart</h4>
+            <button type="button" class="btn-close" onclick="toggleCart()"></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="text-center text-muted">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total mb-3">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="btn btn-primary w-100 mb-2">Checkout</button>
+            <button class="btn btn-secondary w-100" onclick="toggleCart()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function increaseQuantity() {
+            const quantity = document.getElementById('quantity');
+            quantity.value = parseInt(quantity.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const quantity = document.getElementById('quantity');
+            if (quantity.value > 1) {
+                quantity.value = parseInt(quantity.value) - 1;
+            }
+        }
+
+        function addProductToCart() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            for (let i = 0; i < quantity; i++) {
+                addToCart('Wireless Earbuds Pro', 79.99);
+            }
+        }
+
+        function addToWishlist() {
+            showNotification('Added to Wishlist!', 'success');
+        }
+
+        function submitReview(event) {
+            event.preventDefault();
+            showNotification('Thank you! Your review has been submitted.', 'success');
+            document.querySelector('.review-form form').reset();
+        }
+    </script>
+</body>
+</html>

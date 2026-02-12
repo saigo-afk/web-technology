@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TechGear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-shopping-bag"></i> TechGear
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleCart()">
+                            <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header bg-dark text-white py-5">
+        <div class="container">
+            <h1>About TechGear</h1>
+            <p class="lead">Quality Tech Products, Excellence in Service</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Our Story -->
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <img src="https://via.placeholder.com/500x400?text=TechGear+Logo" alt="TechGear" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mb-4">Our Story</h2>
+                <p>TechGear was founded in 2015 with a simple mission: to bring premium tech accessories and products to customers at competitive prices. What started as a small online store has grown into a trusted name in the tech industry.</p>
+                <p>We believe that quality tech products should be accessible to everyone. Our carefully curated selection includes products from leading manufacturers, ensuring you get the best value for your money.</p>
+                <p>Today, we serve thousands of customers worldwide and continue to expand our product range to meet the ever-changing needs of tech enthusiasts and everyday users alike.</p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Mission and Vision -->
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide our customers with high-quality tech products and exceptional customer service at the best possible prices.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading online destination for tech products, recognized for quality, reliability, and customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Why Choose Us -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-5">Why Choose TechGear?</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="feature-box">
+                            <i class="fas fa-check-circle"></i>
+                            <h5>Quality Assured</h5>
+                            <p>All products are thoroughly tested for quality and performance</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="feature-box">
+                            <i class="fas fa-truck"></i>
+                            <h5>Fast Shipping</h5>
+                            <p>Quick and reliable delivery to your doorstep</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="feature-box">
+                            <i class="fas fa-undo"></i>
+                            <h5>Easy Returns</h5>
+                            <p>Hassle-free return policy within 30 days</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="feature-box">
+                            <i class="fas fa-headset"></i>
+                            <h5>24/7 Support</h5>
+                            <p>Dedicated customer service available round the clock</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Our Values -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-5">Our Core Values</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card">
+                            <h4><i class="fas fa-heart"></i> Customer First</h4>
+                            <p>We prioritize customer satisfaction in every decision we make. Your happiness is our success.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card">
+                            <h4><i class="fas fa-gem"></i> Quality Excellence</h4>
+                            <p>We are committed to offering only the highest quality products from trusted brands.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card">
+                            <h4><i class="fas fa-handshake"></i> Trust & Integrity</h4>
+                            <p>We believe in honest dealings and transparent communication with all our customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Team Section -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-5">Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 text-center mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Team+Member+1" alt="John Doe" class="rounded-circle mb-3">
+                            <h5>John Doe</h5>
+                            <p class="text-muted">Founder & CEO</p>
+                            <p>10+ years in tech industry</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Team+Member+2" alt="Jane Smith" class="rounded-circle mb-3">
+                            <h5>Jane Smith</h5>
+                            <p class="text-muted">Operations Manager</p>
+                            <p>8+ years in logistics</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Team+Member+3" alt="Mike Johnson" class="rounded-circle mb-3">
+                            <h5>Mike Johnson</h5>
+                            <p class="text-muted">Product Manager</p>
+                            <p>7+ years in product development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Team+Member+4" alt="Sarah Williams" class="rounded-circle mb-3">
+                            <h5>Sarah Williams</h5>
+                            <p class="text-muted">Customer Support Lead</p>
+                            <p>6+ years in customer service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section bg-primary text-white py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3 class="display-5">10K+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3 class="display-5">500+</h3>
+                    <p>Products Available</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3 class="display-5">50+</h3>
+                    <p>Brands</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3 class="display-5">11 Yrs</h3>
+                    <p>In Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About TechGear</h5>
+                    <p>Your one-stop shop for premium tech products and accessories.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="products.html" class="text-white-50">Products</a></li>
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2026 TechGear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h4>Shopping Cart</h4>
+            <button type="button" class="btn-close" onclick="toggleCart()"></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="text-center text-muted">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total mb-3">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="btn btn-primary w-100 mb-2">Checkout</button>
+            <button class="btn btn-secondary w-100" onclick="toggleCart()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
