@@ -158,123 +158,44 @@
                                 <td>Jan 15, 2025</td>
                                 <td>-</td>
                                 <td>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
+                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewUserModal"><i class="fas fa-eye"></i></button>
+                                    <button class="btn btn-sm btn-secondary" disabled><i class="fas fa-ban"></i></button>
                                 </td>
                             </tr>
                             <tr>
-                                <td><strong>John Smith</strong></td>
-                                <td>john@example.com</td>
+                                <td><strong>John Doe</strong></td>
+                                <td>john.doe@example.com</td>
+                                <td><span class="badge bg-primary">Customer</span></td>
+                                <td><span class="badge bg-success">Active</span></td>
+                                <td>Feb 20, 2025</td>
+                                <td>12</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewUserModal"><i class="fas fa-eye"></i></button>
+                                    <button class="btn btn-sm btn-warning" onclick="blockUser('U002')"><i class="fas fa-ban"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sarah Smith</strong></td>
+                                <td>sarah.smith@example.com</td>
                                 <td><span class="badge bg-primary">Customer</span></td>
                                 <td><span class="badge bg-success">Active</span></td>
                                 <td>Jan 10, 2025</td>
-                                <td>12</td>
-                                <td>
-                                    <button class="btn btn-sm btn-info">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Sarah Johnson</strong></td>
-                                <td>sarah@example.com</td>
-                                <td><span class="badge bg-primary">Customer</span></td>
-                                <td><span class="badge bg-success">Active</span></td>
-                                <td>Feb 1, 2025</td>
                                 <td>8</td>
                                 <td>
-                                    <button class="btn btn-sm btn-info">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
+                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewUserModal"><i class="fas fa-eye"></i></button>
+                                    <button class="btn btn-sm btn-warning" onclick="blockUser('U003')"><i class="fas fa-ban"></i></button>
                                 </td>
                             </tr>
                             <tr>
-                                <td><strong>Michael Brown</strong></td>
-                                <td>michael@example.com</td>
+                                <td><strong>Mike Johnson</strong></td>
+                                <td>mike.johnson@example.com</td>
                                 <td><span class="badge bg-primary">Customer</span></td>
-                                <td><span class="badge bg-warning">Inactive</span></td>
-                                <td>Jan 25, 2025</td>
-                                <td>5</td>
-                                <td>
-                                    <button class="btn btn-sm btn-info">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Emily Davis</strong></td>
-                                <td>emily@example.com</td>
-                                <td><span class="badge bg-primary">Customer</span></td>
-                                <td><span class="badge bg-success">Active</span></td>
-                                <td>Feb 3, 2025</td>
-                                <td>15</td>
-                                <td>
-                                    <button class="btn btn-sm btn-info">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>David Wilson</strong></td>
-                                <td>david@example.com</td>
-                                <td><span class="badge bg-primary">Customer</span></td>
-                                <td><span class="badge bg-success">Active</span></td>
-                                <td>Feb 5, 2025</td>
+                                <td><span class="badge bg-danger">Inactive</span></td>
+                                <td>Dec 5, 2024</td>
                                 <td>3</td>
                                 <td>
-                                    <button class="btn btn-sm btn-info">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Lisa Anderson</strong></td>
-                                <td>lisa@example.com</td>
-                                <td><span class="badge bg-primary">Customer</span></td>
-                                <td><span class="badge bg-success">Active</span></td>
-                                <td>Feb 8, 2025</td>
-                                <td>9</td>
-                                <td>
-                                    <button class="btn btn-sm btn-info">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-warning">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
+                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewUserModal"><i class="fas fa-eye"></i></button>
+                                    <button class="btn btn-sm btn-danger" onclick="deleteUser('U004')"><i class="fas fa-trash"></i></button>
                                 </td>
                             </tr>
                         </tbody>
