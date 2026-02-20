@@ -5,16 +5,34 @@ function handleLogin(event) {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Demo credentials
-    if (email === 'admin@techgear.com' && password === 'admin123') {
-        // Store login session
+    // Admin default credentials
+    const validEmail = 'admin@techgear.com';
+    const validPassword = 'admin123';
+
+    // Clear previous errors
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    emailInput.classList.remove('is-invalid');
+    passwordInput.classList.remove('is-invalid');
+
+    // Validate credentials
+    if (email === validEmail && password === validPassword) {
+        // Store login state in localStorage
         localStorage.setItem('adminLoggedIn', 'true');
         localStorage.setItem('adminEmail', email);
         
-        // Redirect to dashboard
-        window.location.href = 'dashboard.html';
+        showNotification('Login successful! Redirecting to dashboard...', 'success');
+        
+        // Redirect to dashboard after a short delay
+        setTimeout(() => {
+            window.location.href = 'dashboard.html';
+        }, 500);
     } else {
-        alert('Invalid credentials! Please use:\nEmail: admin@techgear.com\nPassword: admin123');
+        // Show error message
+        emailInput.classList.add('is-invalid');
+        passwordInput.classList.add('is-invalid');
+        
+        showNotification('Invalid email or password. Please try again.', 'danger');
     }
 }
 
